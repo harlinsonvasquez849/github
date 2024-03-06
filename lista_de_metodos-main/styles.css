@@ -1,0 +1,26 @@
+/* Estilos para la tabla */
+table {
+    border-collapse: collapse;
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  /* Estilos para celdas aprobadas y reprobadas */
+  td[estado="aprobada"] {
+    background-color: lightgreen;
+  }
+  
+  td[estado="reprobada"] {
+    background-color: lightcoral;
+  }
+  

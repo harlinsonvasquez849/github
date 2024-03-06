@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Notas</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="atributos.js"></script>
+</head>
+<body>
+  <form id="formulario">
+    <label for="nombre">Nombre del estudiante:</label>
+    <input type="text" id="nombre" required>
+    <br><br>
+    <label for="materias">Materias:</label>
+    <select id="materias">
+      <option value="Matemáticas">Matemáticas</option>
+      <option value="Ciencias">Ciencias</option>
+      <option value="Historia">Historia</option>
+    </select>
+    <br><br>
+    <label for="nota1">Nota 1:</label>
+    <input type="number" id="nota1" min="0" max="100" required>
+    <br><br>
+    <label for="nota2">Nota 2:</label>
+    <input type="number" id="nota2" min="0" max="100" required>
+    <br><br>
+    <label for="nota3">Nota 3:</label>
+    <input type="number" id="nota3" min="0" max="100" required>
+    <br><br>
+    <button type="button" onclick="agregarEstudiante()">Agregar</button>
+  </form>
+
+  <table id="tabla">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Materia</th>
+        <th>Nota 1</th>
+        <th>Nota 2</th>
+        <th>Nota 3</th>
+        <th>Promedio</th>
+      </tr>
+    </thead>
+    <tbody id="cuerpoTabla">
+      <!-- Aquí se agregarán las filas -->
+    </tbody>
+  </table>
+
+ 
+</body>
+</html>
+

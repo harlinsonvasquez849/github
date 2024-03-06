@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Calculadora de masa corporal</h2>
+    <form action="">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso">
+        <label for="altura">Altura</label>  
+        <input type="text" id="altura">
+        <input type="text" id="resultado">
+        <button type="button" onclick="calcularMasaCorporal()">Calcular</button>
+    </form>
+    <script>
+     function calcularMasaCorporal(){
+        let peso = document.getElementById('peso').value;
+        let altura = document.getElementById('altura').value;
+        let resultado = peso / (altura * altura);
+        document.getElementById('resultado').value = resultado;
+    }
+    </script>
+    
+</body>
+</html>

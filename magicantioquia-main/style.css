@@ -1,0 +1,284 @@
+*{
+    margin: 0;/* con esto reseteamos todas las propiedades que trae por defecto*/
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    list-style: none;
+    /* text-transform: capitalize; para que la primera letra de cada palabra sea mayuscula*/
+}
+body{
+    background:rgb(86, 245, 165)
+    
+}
+
+.contenedor_cabecera{
+ 
+    width: 100%;
+}
+.banner{
+    display: flex;
+    position: relative;
+    width: calc(100% - 70px);
+    height: 400px;
+    margin: 35px;
+    border-radius: 10px;
+    justify-content: space-between;
+       
+}
+.banner > img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 65px;
+    right: 0px;
+    border-radius: 15px;    
+}
+
+
+.buscar{
+    
+   display: flex;
+    padding: 20px;
+    height: 40px;
+ 
+}
+input{
+    width: 350px;
+    padding: 15px;
+    padding-right: 35px;
+    border-radius: 5px 0 0 5px;
+    border: 0;
+    outline: none;
+    font-size: 1rem;
+}
+button {
+    background-color: aqua;
+    padding: 10px 15px;
+    border: 0;
+    height: 30px;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    cursor: pointer;
+}
+.nave ul {
+    display: flex;
+    align-items: flex-start;
+
+
+}
+.nave ul a{
+    /*margin: 5px;
+    color: #000;
+    font-weight: 200px;
+    transition: all .3s ease;*/
+    margin: 5px;
+    padding: 15px;
+    font-size: 18px;
+    font-weight: 200px;
+    text-decoration: none;
+    color: #000;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+}
+.nave  ul a:hover{
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+.nave{
+    display: flex;
+    align-items:flex-start;
+}
+
+.card{
+    position: relative;
+    width: 300px;
+    height: 350px;
+    margin: 50px;
+   border: solid black;
+}
+.card .face{
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: .5s;
+}
+.card .front{
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0 5px 10px #000;
+}
+.card .front img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card .front h3{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    background: rgba(0, 0, 0, .4);
+    text-align: center;
+}
+.card .back{
+    transform: perspective(600px) rotateY(180deg);
+    background: rgb(3, 35, 54);
+    padding: 15px;
+    color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 5px 10px #000;
+}
+.card .back .link{
+    border-top: solid 1px #f3f3f3;
+    height: 50px;
+    line-height: 50px;
+}
+.card .back .link a{
+    color: #f3f3f3;
+}
+
+.card .back h3{
+    font-size: 17px;
+    margin-top: 20px;
+    letter-spacing: 2px;
+}
+
+.card .back p{
+   letter-spacing: 1px;
+   font-size: 11px;
+}
+
+.card:hover .front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.card:hover .back{
+    transform: perspective(600px) rotateY(360deg);
+}
+
+.contenedor_card{
+    display: flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+.articulo img{
+    width: calc(33% - 40px);
+    margin: 20px;
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 5px;
+   
+}
+
+.article > .articulo > .articulo_imagen img {
+    width: 100%;
+    margin: 1%;
+}
+
+
+.articulo_imagen{
+    width: calc(100% - 40px);
+    margin: 20px;
+    height: 400px;
+    margin-top: 40px;
+    border-radius: 5px;
+}
+.arti{
+    width: 100%;
+    
+    
+}
+.article{
+    width: 100%;
+
+}
+.article >.articulo>p{
+    text-align: center;
+    margin: 10px;
+}
+.article >.articulo>h2{
+    text-align: center;
+    color: #000;
+}
+.articulo_imagen{
+    display: flex;
+    flex-wrap: wrap;
+}
+.articulo_imgs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.container-footer{
+    
+    max-width: 1200px;
+    margin:0 auto;
+ 
+
+}
+.footer{
+    background-color: #24262B;
+    padding: 40PX 0;
+   border-radius: 15px;
+   margin: 15px;
+}
+.footer-row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-link{
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-link h4{
+    font-size: 20px;
+    color:white;
+    margin-bottom: 25px;
+    font-weight: 500;
+    border-bottom: 2px solid greenyellow;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+.footer-link  ul li a { 
+    font-size: 18px;
+    text-decoration: none;
+    color: #bbbbbb;
+    display: block;
+    margin-bottom: 15px;
+    transition: all .3s ease;
+
+}
+.footer-link  ul li a:hover{
+    color: #FFFFFF;
+    padding-left: 6px;
+}
+.social-link a{ 
+    display: inline-block;
+    min-height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: white;
+    transition: all .5s ease;
+
+}
+.social-link a:hover{
+    background-color: greenyellow;
+}

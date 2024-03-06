@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h2>Calculadora de masa corporal</h2>
+    <form action="">
+        <label for="peso">Peso</label>
+        <input type="text" id="peso">
+        <label for="altura">Altura</label>  
+        <input type="text" id="altura">
+        <input type="text" id="resultado">
+        <button type="button" onclick="calcularMasaCorporal()">Calcular</button>
+    </form>
+    <script>
+     function calcularMasaCorporal(){
+        let peso = document.getElementById('peso').value;
+        let altura = document.getElementById('altura').value;
+        let resultado = peso / (altura * altura);
+        document.getElementById('resultado').innerText = resultado;
+    }
+    </script>
+
+    <h3>Tests</h3>
+    <p>Test 1: When the peso is 70 and altura is 1.75, the resultado should be 22.86</p>
+    <button onclick="test1()">Run Test 1</button>
+    <p>Test 2: When the peso is 80 and altura is 1.80, the resultado should be 24.69</p>
+    <button onclick="test2()">Run Test 2</button>
+    <p>Test 3: When the peso is 60 and altura is 1.60, the resultado should be 23.44</p>
+    <button onclick="test3()">Run Test 3</button>
+
+    <script>
+        function test1() {
+            document.getElementById('peso').value = 70;
+            document.getElementById('altura').value = 1.75;
+            calcularMasaCorporal();
+            let resultado = document.getElementById('resultado').innerText;
+            if (resultado == 22.86) {
+                console.log("Test 1 passed");
+            } else {
+                console.error("Test 1 failed");
+            }
+        }
+
+        function test2() {
+            document.getElementById('peso').value = 80;
+            document.getElementById('altura').value = 1.80;
+            calcularMasaCorporal();
+            let resultado = document.getElementById('resultado').innerText;
+            if (resultado == 24.69) {
+                console.log("Test 2 passed");
+            } else {
+                console.error("Test 2 failed");
+            }
+        }
+
+        function test3() {
+            document.getElementById('peso').value = 60;
+            document.getElementById('altura').value = 1.60;
+            calcularMasaCorporal();
+            let resultado = document.getElementById('resultado').innerText;
+            if (resultado == 23.44) {
+                console.log("Test 3 passed");
+            } else {
+                console.error("Test 3 failed");
+            }
+        }
+    </script>
+</body>
+</html>

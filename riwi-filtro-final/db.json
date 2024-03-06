@@ -1,0 +1,52 @@
+{
+  "admins": [
+    {
+      "id": "ff15",
+      "name": "Admin Outlet",
+      "email": "admin@outlet.com",
+      "password": "password"
+    },
+    {
+      "id": "ff16",
+      "name": "Admin ",
+      "email": "admin@outlet.com",
+      "password": "password"
+    }
+  ],
+  "brands": [
+    {
+      "id": ".4yl",
+      "name": "Tienda D1",
+      "local": "140",
+      "floor": "1",
+      "schedule": "lunes-sabado: 10:00 a.m. - 7:00 p.m\",         \"Domingos y Festivos: 10:00 a.m. - 6:00 p.m",
+      "logo": "/images/logo-d1.jpg",
+      "website": "www.tiendasD1.com",
+      "description": " ¡Donde cada compra es un ahorro seguro! Descubre la frescura, calidad y precios imbatibles en cada pasillo. Haz de tus compras una experiencia rápida, fácil y económica. D1, tu destino número uno para un ahorro inteligente y una vida sin complicaciones."
+    },
+    {
+      "id": ".ib0",
+      "name": "DollarCity",
+      "local": "234",
+      "floor": "2",
+      "schedule": "lunes-sabado: 10:00 a.m. - 7:00 p.m\",         \"Domingos y Festivos: 10:00 a.m. - 6:00 p.m",
+      "logo": "/images/logo-dollarcity.jpg",
+      "website": "www.dollarcity.com",
+      "description": " Tu destino de compras accesibles. Explora un mundo de sorpresas a precios increíbles. ¡Todo a $1! Encuentra calidad y variedad sin romper tu presupuesto. Descubre el valor real en cada rincón de DollarCity, donde cada compra es una ganga."
+    }
+  ],
+  "PQR": [
+    {
+      "id": ".hrp",
+      "tipo": "Queja",
+      "email": "harvack25@gmail.com",
+      "mensaje": "vvvvvvvvvvvvvvvvv"
+    },
+    {
+      "id": ".1il",
+      "tipo": "Peticion",
+      "email": "harvack25@gmail.com",
+      "mensaje": "cualquier mensaje"
+    }
+  ]
+}
