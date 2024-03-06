@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+
+}
+.portafolio{
+    margin: 0;
+    height: 100vh; /* Esto asegura que el cuerpo ocupe toda la altura de la ventana de visualización */
+    background: linear-gradient(to right, #1443ff, #1443ff 50%, #f9f9f9 50%, #f9f9f9);
+}
+.row{   
+ margin-top: 80px;
+}
+.col-md-4{
+    width: 33.333333%;
+    padding: 10px;
+ 
+}
+.card{
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: 0.4s;
+}
+.hero nav .nav-links a{
+    color: #242424;
+    margin-left: 40px;
+    font-size: 20px;
+    text-transform: capitalize;
+    transition: 0.4s;
+}
+.hero{
+    margin-top: 20px;
+    margin-right: 120px;
+    display: flex;
+    justify-content:right
+}
+.hero nav .nav-links a:hover,
+.hero nav .nav-links a .activate{
+    color:blue;
+}
